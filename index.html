@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض فني ومالي - خدمات التسويق الرقمي وتحسين الظهور الإلكتروني - مصنع تشايم</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #000000; /* Deep Black */
+            color: #f3f4f6; /* Light text for dark theme */
+        }
+        
+        /* Color themes & tokens - Black & Neon Orange */
+        .bg-petroleum { background-color: #0a0a0a; }
+        .text-petroleum { color: #ff6600; }
+        .border-petroleum { border-color: #ff6600; }
+        
+        /* Custom card background using dark surfaces with neon orange borders */
+        .content-card {
+            background-color: #121212; /* Rich dark charcoal */
+            border: 1px solid rgba(255, 102, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px -10px rgba(255, 102, 0, 0.4);
+            border-color: rgba(255, 102, 0, 0.8);
+        }
+
+        .inner-item {
+            background-color: #1a1a1a;
+            border: 1px solid rgba(255, 102, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        .inner-item:hover {
+            background-color: #241a14;
+            border-color: rgba(255, 102, 0, 0.5);
+            transform: scale(1.01);
+        }
+
+        /* Animations & Motion */
+        @keyframes floatLogo {
+            0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+            50% { transform: translateY(-8px) scale(1.03) rotate(1deg); }
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 25px rgba(255, 102, 0, 0.8); transform: scale(1); }
+            50% { box-shadow: 0 0 45px rgba(255, 136, 0, 1); transform: scale(1.08); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-float {
+            animation: floatLogo 3s ease-in-out infinite;
+        }
+        .animate-glow {
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+        .motion-fade-in {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .badge-yellow { background-color: #ff6600; color: #000000; font-weight: 900; }
+    </style>
+</head>
+<body class="antialiased pb-20 overflow-x-hidden">
+
+    <!-- Header / Top Logo -->
+    <header class="bg-petroleum text-white shadow-2xl py-12 px-6 mb-12 relative overflow-hidden border-b-2 border-orange-500 motion-fade-in">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-orange-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-6 relative z-10">
+            
+            <!-- Company Logo at Top Center -->
+            <a href="https://dg-craft.com/index.html" target="_blank" class="block animate-float focus:outline-none">
+                <div class="w-24 h-24 md:w-32 md:h-32 rounded-3xl overflow-hidden shadow-2xl border-4 border-orange-500 bg-black p-1 transition-transform hover:scale-110">
+                    <img src="https://i.ibb.co/M5k30hGM/b3d88775-4dd0-4ccf-ae34-ae20c23ff8da.jpg" alt="Digital Craft Logo" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://placehold.co/150x150/000000/ff6600?text=DC'" />
+                </div>
+            </a>
+
+            <div class="motion-fade-in" style="animation-delay: 0.2s;">
+                <span class="badge-yellow text-xs px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3 shadow-lg">مقدم من: شركة Digital Craft</span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white mb-2 drop-shadow-md">عرض فني ومالي</h1>
+                <h2 class="text-xl md:text-2xl text-orange-400 font-bold mb-3">خدمات التسويق الرقمي وتحسين الظهور الإلكتروني</h2>
+                <div class="text-sm md:text-base text-slate-300 font-semibold mt-2 space-y-1">
+                    <p class="text-orange-300 font-bold">مقدم إلى: مصنع تشايم</p>
+                    <p class="text-slate-300">مقدم من: شركة Digital Craft</p>
+                    <p class="text-slate-400 text-xs">مدة التعاقد: 3 أشهر</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-12">
+
+        <!-- Section 1: Introduction -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-orange-500 mb-4 pb-2 border-b-2 border-orange-500/50 inline-block">أولاً: مقدمة عن المشروع</h2>
+            <p class="text-slate-300 leading-relaxed text-base md:text-lg mb-4">
+                تقدم شركة Digital Craft هذا العرض لمصنع تشايم، المتخصص في تصنيع وتوفير مكائن الشاي بالبخار، والمكائن المصنوعة من الستانلس ستيل والنحاس، بالإضافة إلى ماكينات القهوة.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base md:text-lg mb-4">
+                يهدف هذا التعاون إلى تعزيز الحضور الرقمي للمصنع، وزيادة الوعي بالعلامة التجارية ومنتجاتها، وتوسيع قاعدة العملاء المحتملين، وتحسين فرص الوصول إلى الأسواق المستهدفة، من خلال استراتيجية تسويق رقمي متكاملة تجمع بين تحسين محركات البحث، وتحسين الظهور في محركات الذكاء الاصطناعي، وإدارة منصات التواصل الاجتماعي، وإدارة الحملات الإعلانية المدفوعة.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+                تعتمد استراتيجية العمل على تنفيذ جميع الخدمات بالتوازي طوال مدة التعاقد، مع المتابعة المستمرة وتحليل الأداء وتطوير الأنشطة التسويقية وفقاً للنتائج المحققة.
+            </p>
+        </section>
+
+        <!-- Section 2: Service Details -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-orange-500 mb-6 pb-2 border-b-2 border-orange-500/50 inline-block">ثانياً: تفاصيل الخدمات المقدمة</h2>
+            
+            <div class="space-y-8">
+                <!-- 1. SEO -->
+                <div class="inner-item p-6 rounded-2xl border-2 border-orange-500/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
+                        <h3 class="text-xl font-black text-orange-400">1. تحسين محركات البحث SEO</h3>
+                        <span class="text-xs font-bold text-orange-300 bg-black/50 px-3 py-1 rounded-full border border-orange-500/30 self-start">Search Engine Optimization</span>
+                    </div>
+                    <p class="text-slate-300 mb-6 text-sm leading-relaxed">
+                        تهدف الخدمة إلى رفع مستوى ظهور موقع مصنع تشايم في نتائج محركات البحث، وزيادة الزيارات العضوية المستهدفة من العملاء الباحثين عن مكائن الشاي والقهوة ومعدات الضيافة والتجهيزات التجارية.
+                    </p>
+
+                    <div class="space-y-5">
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">أولاً: التحليل والتدقيق الفني للموقع</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إجراء تحليل شامل للموقع الإلكتروني وتقييم الوضع الحالي.</li>
+                                <li>دراسة وتحليل المنافسين في مجال تصنيع وتوريد مكائن الشاي والقهوة.</li>
+                                <li>تحليل الكلمات المفتاحية المرتبطة بمنتجات المصنع.</li>
+                                <li>تحديد الكلمات المفتاحية ذات معدلات البحث والنية الشرائية المرتفعة.</li>
+                                <li>تحليل سلوك واحتياجات الجمهور المستهدف.</li>
+                                <li>إعداد تقرير فني بالمشكلات والعوائق التي تؤثر على ظهور الموقع.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثانياً: التهيئة البرمجية والفنية Technical SEO</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>تحسين البنية البرمجية وهيكل الموقع.</li>
+                                <li>معالجة أخطاء الزحف والفهرسة.</li>
+                                <li>تحسين ملفات Sitemap وRobots.txt.</li>
+                                <li>معالجة الروابط المكسورة وأخطاء 404.</li>
+                                <li>تحسين بنية الروابط الداخلية والخارجية.</li>
+                                <li>تطبيق البيانات المنظمة Schema Markup.</li>
+                                <li>تحسين بنية صفحات المنتجات والتصنيفات.</li>
+                                <li>مراجعة توافق الموقع مع الأجهزة المختلفة.</li>
+                                <li>معالجة المشكلات التقنية التي تؤثر على ظهور الموقع في محركات البحث.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثالثاً: تحسين سرعة الموقع والأداء</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>تحليل سرعة الموقع باستخدام الأدوات المتخصصة.</li>
+                                <li>تحسين سرعة تحميل الصفحات.</li>
+                                <li>ضغط الصور وتحسين أحجامها وصيغها.</li>
+                                <li>تحسين ملفات CSS وJavaScript.</li>
+                                <li>تفعيل تقنيات التخزين المؤقت Cache عند توفر الإمكانية التقنية.</li>
+                                <li>تحسين مؤشرات Core Web Vitals.</li>
+                                <li>معالجة العناصر التي تؤثر على تجربة المستخدم.</li>
+                                <li>تحسين الأداء على الهواتف والأجهزة اللوحية والحواسيب.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">رابعاً: التحسين الداخلي On-Page SEO</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>تحسين العناوين التعريفية Meta Titles.</li>
+                                <li>تحسين الأوصاف التعريفية Meta Descriptions.</li>
+                                <li>تحسين العناوين الرئيسية والفرعية H1 وH2 وH3.</li>
+                                <li>تطوير محتوى صفحات المنتجات.</li>
+                                <li>تحسين وصف مكائن الشاي بالبخار والمكائن الستانلس والنحاسية وماكينات القهوة.</li>
+                                <li>تحسين الصور والنصوص البديلة Alt Text.</li>
+                                <li>تطوير استراتيجية الربط الداخلي بين صفحات الموقع.</li>
+                                <li>تحسين صفحات المنتجات وفق الكلمات المفتاحية المستهدفة.</li>
+                                <li>إعداد وتطوير المحتوى المتوافق مع متطلبات محركات البحث.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">خامساً: تحسين الظهور المحلي وبناء الموثوقية</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>تحسين الظهور في نتائج البحث المحلية.</li>
+                                <li>تحسين بيانات النشاط التجاري على Google Business Profile عند توفر الحساب.</li>
+                                <li>تعزيز موثوقية الموقع والعلامة التجارية.</li>
+                                <li>دراسة فرص بناء الروابط الخارجية ذات الصلة بالنشاط.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. GEO -->
+                <div class="inner-item p-6 rounded-2xl border-2 border-orange-500/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
+                        <h3 class="text-xl font-black text-orange-400">2. تحسين الظهور في محركات الذكاء الاصطناعي GEO</h3>
+                        <span class="text-xs font-bold text-orange-300 bg-black/50 px-3 py-1 rounded-full border border-orange-500/30 self-start">Generative Engine Optimization</span>
+                    </div>
+                    <p class="text-slate-300 mb-3 text-sm leading-relaxed">
+                        تهدف هذه الخدمة إلى تعزيز فرص ظهور مصنع تشايم ومنتجاته ضمن نتائج وتوصيات محركات البحث التوليدية ومنصات الذكاء الاصطناعي.
+                    </p>
+                    <p class="text-orange-300 font-bold text-sm mb-2">وتشمل الأعمال:</p>
+                    <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                        <li>تحليل حضور العلامة التجارية في محركات البحث المدعومة بالذكاء الاصطناعي.</li>
+                        <li>دراسة الأسئلة والاستفسارات المتعلقة بمكائن الشاي والقهوة ومعدات الضيافة.</li>
+                        <li>تطوير محتوى متخصص يجيب عن استفسارات العملاء.</li>
+                        <li>تحسين صفحات المنتجات لتوضيح المواصفات والمميزات والاستخدامات.</li>
+                        <li>تنظيم المعلومات والبيانات داخل الموقع لتسهيل فهمها من أنظمة الذكاء الاصطناعي.</li>
+                        <li>تطبيق البيانات المنظمة لدعم فهم المنتجات والعلامة التجارية.</li>
+                        <li>تحسين الكيانات الرقمية Entity Optimization المرتبطة باسم المصنع ومنتجاته.</li>
+                        <li>تعزيز موثوقية المعلومات والمصادر المرتبطة بالعلامة التجارية.</li>
+                        <li>العمل على تحسين فرص الظهور في إجابات وتوصيات منصات الذكاء الاصطناعي.</li>
+                        <li>متابعة فرص الظهور وتحليل التطورات بصورة مستمرة.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Social Media Management -->
+                <div class="inner-item p-6 rounded-2xl border-2 border-orange-500/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
+                        <h3 class="text-xl font-black text-orange-400">3. إدارة حسابات التواصل الاجتماعي</h3>
+                        <span class="text-xs font-bold text-orange-300 bg-black/50 px-3 py-1 rounded-full border border-orange-500/30 self-start">Social Media Management</span>
+                    </div>
+                    <p class="text-slate-300 mb-3 text-sm leading-relaxed">
+                        تهدف الخدمة إلى بناء حضور رقمي احترافي لمصنع تشايم، وإبراز جودة المنتجات ومميزاتها التنافسية، وتعزيز ثقة الجمهور بالعلامة التجارية، وتحويل منصات التواصل الاجتماعي إلى قنوات فعالة للتعريف بالمنتجات واستقبال الاستفسارات.
+                    </p>
+                    <div class="bg-black/40 p-4 rounded-xl border border-orange-500/20 mb-5">
+                        <p class="text-orange-300 font-bold text-sm mb-1">المنصات المستهدفة:</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-300 text-sm mr-2">
+                            <li>Instagram</li>
+                            <li>TikTok</li>
+                            <li>المنصات الاجتماعية الأخرى وفقاً للاحتياج والاتفاق.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">أولاً: التخطيط والاستراتيجية</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>دراسة العلامة التجارية والمنتجات والجمهور المستهدف.</li>
+                                <li>تحليل المنافسين والمحتوى الخاص بهم.</li>
+                                <li>تحديد الشرائح المستهدفة، ومنها المطاعم والكافيهات والفنادق والموزعون وتجار معدات الضيافة والعملاء الأفراد.</li>
+                                <li>إعداد استراتيجية محتوى متكاملة.</li>
+                                <li>إعداد خطة نشر شهرية.</li>
+                                <li>تحديد الرسائل التسويقية المناسبة لكل شريحة.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثانياً: صناعة المحتوى وإدارته</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إعداد الأفكار الإبداعية للمحتوى.</li>
+                                <li>تصميم المنشورات التعريفية والتسويقية.</li>
+                                <li>إعداد محتوى يبرز جودة التصنيع والخامات المستخدمة.</li>
+                                <li>تقديم محتوى تعريفي بمكائن الشاي بالبخار.</li>
+                                <li>إبراز الفروقات والمميزات بين المكائن الستانلس والنحاسية.</li>
+                                <li>إعداد محتوى متخصص لماكينات القهوة.</li>
+                                <li>تقديم محتوى يوضح طرق الاستخدام والتشغيل.</li>
+                                <li>إعداد محتوى يبرز المميزات الفنية والعملية للمنتجات.</li>
+                                <li>إعداد محتوى ترويجي للعروض والمنتجات الجديدة.</li>
+                                <li>كتابة النصوص التسويقية المصاحبة للمنشورات.</li>
+                                <li>إعداد أفكار ومحتوى الفيديوهات القصيرة Reels وTikTok.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثالثاً: إدارة الحسابات والتفاعل</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إدارة الحسابات ومتابعة نشاطها.</li>
+                                <li>جدولة ونشر المحتوى وفق الخطة المعتمدة.</li>
+                                <li>متابعة التعليقات والرسائل والاستفسارات.</li>
+                                <li>متابعة تفاعل الجمهور مع المحتوى.</li>
+                                <li>توجيه العملاء إلى قنوات التواصل والبيع المعتمدة.</li>
+                                <li>تطوير أساليب التواصل بما يتناسب مع هوية المصنع.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">رابعاً: التحليل والتقارير</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>متابعة معدلات الوصول والانطباعات.</li>
+                                <li>تحليل التفاعل والمشاهدات.</li>
+                                <li>قياس أداء أنواع المحتوى المختلفة.</li>
+                                <li>متابعة نمو الحسابات.</li>
+                                <li>تقديم تقارير أداء دورية وتوصيات تطويرية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Paid Advertising Management -->
+                <div class="inner-item p-6 rounded-2xl border-2 border-orange-500/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
+                        <h3 class="text-xl font-black text-orange-400">4. إدارة الحملات الإعلانية المدفوعة</h3>
+                        <span class="text-xs font-bold text-orange-300 bg-black/50 px-3 py-1 rounded-full border border-orange-500/30 self-start">Paid Advertising Management</span>
+                    </div>
+                    <p class="text-slate-300 mb-6 text-sm leading-relaxed">
+                        تهدف هذه الخدمة إلى الوصول إلى العملاء الأكثر اهتماماً بمنتجات مصنع تشايم، وزيادة الوعي بالعلامة التجارية، وتوليد استفسارات وفرص بيعية من خلال الحملات الإعلانية المدفوعة.
+                    </p>
+
+                    <div class="space-y-5">
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">أولاً: حملات Google Ads</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إعداد الاستراتيجية الإعلانية المناسبة لطبيعة المنتجات.</li>
+                                <li>تحليل الكلمات المفتاحية ذات النية الشرائية.</li>
+                                <li>إنشاء حملات البحث Search Ads.</li>
+                                <li>استهداف الباحثين عن مكائن الشاي بالبخار ومكائن الشاي الستانلس والنحاسية وماكينات القهوة.</li>
+                                <li>إعداد الإعلانات النصية وتحسين الرسائل التسويقية.</li>
+                                <li>تحديد الاستهداف الجغرافي المناسب.</li>
+                                <li>إعداد إضافات الإعلانات.</li>
+                                <li>متابعة الكلمات المفتاحية واستبعاد عمليات البحث غير المناسبة.</li>
+                                <li>تحسين عروض الأسعار والميزانيات.</li>
+                                <li>متابعة وتحليل تكلفة النقرة وتكلفة الاستفسار.</li>
+                                <li>تحسين أداء الحملات بصورة مستمرة.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثانياً: حملات Instagram Ads</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إعداد وإدارة الحملات من خلال منصة Meta Ads.</li>
+                                <li>استهداف أصحاب المطاعم والكافيهات والفنادق ومحلات معدات الضيافة.</li>
+                                <li>إنشاء حملات لزيادة الوعي بالعلامة التجارية.</li>
+                                <li>إنشاء حملات للتعريف بالمنتجات ومميزاتها.</li>
+                                <li>إعداد الحملات الموجهة لاستقبال الرسائل والاستفسارات.</li>
+                                <li>تصميم وتجهيز المواد الإعلانية بالتنسيق مع استراتيجية المحتوى.</li>
+                                <li>إعادة استهداف الجمهور المتفاعل مع الحسابات والموقع عند توفر البيانات اللازمة.</li>
+                                <li>اختبار الإعلانات المختلفة وتحليل نتائجها.</li>
+                                <li>تحسين الاستهداف والأداء الإعلاني بصورة مستمرة.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">ثالثاً: حملات TikTok Ads</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إعداد استراتيجية إعلانية تتناسب مع طبيعة منصة TikTok.</li>
+                                <li>إنشاء حملات لزيادة الوعي بالعلامة التجارية.</li>
+                                <li>استهداف المهتمين بالمطاعم والكافيهات وتجهيزات الضيافة.</li>
+                                <li>إعداد إعلانات الفيديو القصيرة.</li>
+                                <li>إبراز مميزات المكائن وطريقة تشغيلها وجودة تصنيعها.</li>
+                                <li>إنشاء حملات لزيادة الزيارات والاستفسارات.</li>
+                                <li>اختبار المحتوى الإعلاني وقياس معدلات المشاهدة والتفاعل.</li>
+                                <li>تحسين الاستهداف والمواد الإعلانية وفقاً للنتائج.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/40 p-4 rounded-xl border border-orange-500/15">
+                            <h4 class="font-bold text-orange-300 mb-2">رابعاً: التحليل وقياس الأداء الإعلاني</h4>
+                            <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-sm mr-2">
+                                <li>إعداد ومراجعة أدوات تتبع التحويلات.</li>
+                                <li>ربط الحملات بأدوات التحليل المناسبة.</li>
+                                <li>متابعة تكلفة النقرة وتكلفة الاستفسار ومعدلات التحويل.</li>
+                                <li>تحليل أداء الحملات والمنصات المختلفة.</li>
+                                <li>إعادة توزيع الميزانيات وفقاً لأفضل النتائج.</li>
+                                <li>تطوير الاستراتيجية الإعلانية بناءً على البيانات.</li>
+                                <li>تقديم تقارير دورية توضح أداء الحملات والتوصيات.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Execution Mechanism -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-orange-500 mb-4 pb-2 border-b-2 border-orange-500/50 inline-block">ثالثاً: آلية تنفيذ وإدارة العمل</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                تلتزم شركة Digital Craft بتنفيذ جميع الخدمات التسويقية المذكورة بصورة متكاملة ومتزامنة على مدار فترة التعاقد البالغة ثلاثة أشهر، وفق آلية عمل مستمرة تشمل:
+            </p>
+            <div class="space-y-4">
+                <div class="inner-item p-4 rounded-xl border-r-4 border-orange-500">
+                    <p class="text-slate-300 text-sm md:text-base"><strong class="text-orange-400">1. التخطيط والتحليل:</strong> دراسة السوق والمنافسين والجمهور المستهدف، ومراجعة أداء الموقع والحسابات والمنصات الإعلانية.</p>
+                </div>
+                <div class="inner-item p-4 rounded-xl border-r-4 border-orange-500">
+                    <p class="text-slate-300 text-sm md:text-base"><strong class="text-orange-400">2. التنفيذ المستمر:</strong> العمل على تحسين الموقع تقنياً وتسويقياً، وإدارة المحتوى والحسابات، وتنفيذ الحملات الإعلانية بالتوازي.</p>
+                </div>
+                <div class="inner-item p-4 rounded-xl border-r-4 border-orange-500">
+                    <p class="text-slate-300 text-sm md:text-base"><strong class="text-orange-400">3. المتابعة والتحسين:</strong> مراقبة الأداء بصورة مستمرة، وتحليل النتائج، وإجراء التحسينات اللازمة على جميع الأنشطة التسويقية.</p>
+                </div>
+                <div class="inner-item p-4 rounded-xl border-r-4 border-orange-500">
+                    <p class="text-slate-300 text-sm md:text-base"><strong class="text-orange-400">4. التطوير والتوسع:</strong> الاستفادة من البيانات والنتائج لتطوير المحتوى والاستهداف والكلمات المفتاحية والرسائل التسويقية.</p>
+                </div>
+                <div class="inner-item p-4 rounded-xl border-r-4 border-orange-500">
+                    <p class="text-slate-300 text-sm md:text-base"><strong class="text-orange-400">5. التقارير وقياس الأداء:</strong> تقديم تقارير دورية توضح مستوى الإنجاز ومؤشرات الأداء والفرص المتاحة للتحسين.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Deliverables -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-orange-500 mb-4 pb-2 border-b-2 border-orange-500/50 inline-block">رابعاً: مخرجات العمل</h2>
+            <p class="text-slate-300 mb-4">خلال فترة التعاقد، تعمل شركة Digital Craft على توفير المخرجات التالية:</p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-300 text-sm">
+                <li class="inner-item p-3.5 rounded-xl">• تنفيذ التحسينات الفنية والبرمجية للموقع.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تحسين سرعة الموقع وتجربة المستخدم.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تحسين صفحات المنتجات وفق استراتيجية SEO.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تنفيذ استراتيجية تحسين الظهور GEO.</li>
+                <li class="inner-item p-3.5 rounded-xl">• إعداد وإدارة المحتوى التسويقي لحسابات التواصل الاجتماعي.</li>
+                <li class="inner-item p-3.5 rounded-xl">• إدارة وجدولة ونشر المحتوى.</li>
+                <li class="inner-item p-3.5 rounded-xl">• إدارة الحملات الإعلانية على Google وInstagram وTikTok.</li>
+                <li class="inner-item p-3.5 rounded-xl">• متابعة وتحليل أداء الحملات الإعلانية.</li>
+                <li class="inner-item p-3.5 rounded-xl">• متابعة مؤشرات أداء الموقع والحسابات الاجتماعية.</li>
+                <li class="inner-item p-3.5 rounded-xl">• إعداد تقارير دورية عن الأداء والنتائج.</li>
+                <li class="inner-item p-3.5 rounded-xl md:col-span-2">• تقديم التوصيات التسويقية والتطويرية المستمرة.</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Financial Proposal -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in border-2 border-orange-500 bg-[#141414]">
+            <h2 class="text-2xl font-black text-orange-500 mb-6 pb-2 border-b-2 border-orange-500/50 inline-block">خامساً: العرض المالي</h2>
+            
+            <div class="overflow-x-auto mb-8 rounded-2xl border border-orange-500/40">
+                <table class="w-full text-right border-collapse">
+                    <thead>
+                        <tr class="bg-orange-600/20 border-b border-orange-500/40 text-orange-400">
+                            <th class="p-4 font-black text-base">الخدمة</th>
+                            <th class="p-4 font-black text-base text-left">التكلفة الشهرية</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-orange-500/20 text-slate-200 text-sm md:text-base">
+                        <tr class="bg-[#1a1a1a]/60 hover:bg-[#241a14] transition-colors">
+                            <td class="p-4 font-semibold">تحسين محركات البحث SEO والتهيئة البرمجية وتحسين السرعة</td>
+                            <td class="p-4 font-bold text-orange-300 text-left">2,000 ريال</td>
+                        </tr>
+                        <tr class="bg-[#1a1a1a]/60 hover:bg-[#241a14] transition-colors">
+                            <td class="p-4 font-semibold">إدارة حسابات التواصل الاجتماعي</td>
+                            <td class="p-4 font-bold text-orange-300 text-left">2,000 ريال</td>
+                        </tr>
+                        <tr class="bg-[#1a1a1a]/60 hover:bg-[#241a14] transition-colors">
+                            <td class="p-4 font-semibold">إدارة الحملات الإعلانية Google وInstagram وTikTok</td>
+                            <td class="p-4 font-bold text-orange-300 text-left">2,000 ريال</td>
+                        </tr>
+                        <tr class="bg-orange-500/15 font-black text-white">
+                            <td class="p-4 text-orange-400 text-lg">الإجمالي الشهري</td>
+                            <td class="p-4 text-orange-400 text-lg text-left">6,000 ريال</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="inner-item p-6 rounded-2xl border-2 border-orange-500 bg-[#1a1a1a] text-center shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-32 h-32 bg-orange-600/20 rounded-full blur-2xl"></div>
+                <div class="text-xl font-bold text-orange-300 mb-3">قيمة التعاقد لمدة ثلاثة أشهر:</div>
+                <div class="text-lg text-slate-400 line-through mb-2">إجمالي القيمة قبل الخصم: 18,000 ريال سعودي.</div>
+                <div class="text-2xl md:text-4xl font-black text-orange-400 tracking-tight drop-shadow-[0_0_15px_rgba(255,102,0,0.6)]">
+                    إجمالي قيمة التعاقد بعد الخصم: 15,000 ريال سعودي.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Terms & Conclusion -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-orange-500 mb-4 pb-2 border-b-2 border-orange-500/50 inline-block">سادساً: الشروط والأحكام</h2>
+            <ol class="list-decimal list-inside space-y-2.5 text-slate-300 text-sm md:text-base mb-8">
+                <li class="inner-item p-3.5 rounded-xl">مدة التعاقد ثلاثة أشهر من تاريخ اعتماد العرض وبدء العمل.</li>
+                <li class="inner-item p-3.5 rounded-xl">يتم تنفيذ جميع الخدمات المتفق عليها بالتوازي طوال فترة التعاقد.</li>
+                <li class="inner-item p-3.5 rounded-xl">الميزانيات الإعلانية المدفوعة لمنصات Google وMeta وTikTok غير مشمولة في قيمة العرض، ويتحملها العميل بشكل مستقل.</li>
+                <li class="inner-item p-3.5 rounded-xl">يلتزم العميل بتوفير صلاحيات الوصول إلى الموقع الإلكتروني والحسابات الاجتماعية والإعلانية.</li>
+                <li class="inner-item p-3.5 rounded-xl">يتم اعتماد المحتوى والخطط الإعلانية من العميل قبل النشر أو الإطلاق.</li>
+                <li class="inner-item p-3.5 rounded-xl">لا تتضمن خدمات SEO وGEO ضمان ترتيب محدد أو عدد معين من الزيارات أو المبيعات، نظراً لارتباط النتائج بعوامل تنافسية وتقنية وخارجية متعددة.</li>
+                <li class="inner-item p-3.5 rounded-xl">يتم تقديم التقارير ومراجعة الأداء بصورة دورية خلال مدة التعاقد.</li>
+            </ol>
+
+            <div class="inner-item p-6 rounded-2xl bg-black/60 border border-orange-500/40 text-center">
+                <div class="text-orange-400 font-black text-lg mb-3">Digital Craft</div>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-3">
+                    نؤمن بأن بناء حضور رقمي قوي لا يعتمد على قناة تسويقية واحدة، بل على تكامل جميع القنوات لتحقيق انتشار أوسع، وتعزيز ثقة العملاء، وخلق فرص نمو تجاري مستدامة.
+                </p>
+                <p class="text-orange-300 font-bold text-sm md:text-base leading-relaxed">
+                    نتطلع إلى التعاون مع مصنع تشايم وبناء شراكة تسويقية تسهم في تعزيز مكانته في السوق وتوسيع نطاق وصول منتجاته إلى العملاء المستهدفين.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Bottom-Right Glowing Logo -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://dg-craft.com/index.html" target="_blank" class="block animate-glow rounded-3xl overflow-hidden w-16 h-16 md:w-20 md:h-20 bg-black border-2 border-orange-500 shadow-[0_0_25px_rgba(255,102,0,0.8)] p-1 transition-transform hover:scale-110" title="زيارة موقع Digital Craft">
+            <img src="https://i.ibb.co/M5k30hGM/b3d88775-4dd0-4ccf-ae34-ae20c23ff8da.jpg" alt="Digital Craft Logo" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://placehold.co/100x100/000000/ff6600?text=DC'" />
+        </a>
+    </div>
+
+</body>
+</html>
